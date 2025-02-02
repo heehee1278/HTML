@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend><b>배송 정보</b></legend>
+                <ul style="list-style-type: none;">
+                    <li>
+                        <label for="prod">
+                            주문상품
+                            <input type="text" id="prod" value="상품용 3KG" readonly>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="name">
+                            이름&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="text" id="user-name" autofocus required>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="addr">
+                            배송 주소
+                            <input type="text" id="addr" autofocus required>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="email">
+                            이메일
+                            <input type="email" id="email" autofocus required>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="tel">
+                            연락처
+                            <input type="tel" id="tel" placeholder="하이픈 빼고 입력해 주세요. (01012345678)" autofocus required>
+                        </label>
+                    </li>
+                    <li>
+                        <label for="date">
+                            배송 지정
+                            <input type="date" id="date">
+                            <small>주문일로부터 최소 3일 이후</small>
+                        </label>
+                    </li>
+                </ul>
+        </fieldset>
+        <fieldset>
+            <div>
+                <input type="submit" value="주문하기">
+                <input type="reset"value="취소하기">
+            </div>
+        </fieldset>
+    </form>
+</body>
+</html>

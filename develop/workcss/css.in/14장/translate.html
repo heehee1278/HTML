@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .orgin {
+            border: 1px solid black;
+            margin: 40px;
+        }
+
+        .movex:hover {
+            /* transform: translatex(50px);오른쪽 이동 */
+            transform: translatex(-50px);
+        }
+
+        .movey:hover {
+            /* transform: translatey(20px);아래로 이동 */
+            transform: translatey(-20px);
+            /* 위로 이동 */
+        }
+
+        .movexy:hover {
+            /* transform: translate(10px, 20px) ;오른쪽 아래 대각 이동 */
+            transform: translate(-10px, -20px);
+            /* 왼쪽 위 대각 이동 */
+        }
+    </style>
+</head>
+
+<body>
+    <div class="orgin">
+        <div class="movex">
+            <img src="/workcss/img/bus.jpg" alt="">
+        </div>
+    </div>
+    <div class="orgin">
+        <div class="movey">
+            <img src="/workcss/img/bus.jpg" alt="">
+        </div>
+    </div>
+    <div class="orgin">
+        <div class="movexy">
+            <img src="/workcss/img/bus.jpg" alt="">
+        </div>
+    </div>
+</body>
+
+</html>

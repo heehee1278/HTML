@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            margin-top: 50px;
+            margin-left: 100px;
+            padding: 20px;
+            animation-name: moving;
+            animation-duration: 3s;
+            /* animation-direction: normal; 방향 (기본값) */
+            /* animation-direction: alternate; 반대방향, 돌아감 */
+            /* animation-iteration-count: 2; 2번 반복 */
+            animation-direction: alternate;
+            animation-iteration-count: infinite;/* 무한반복 */
+        }
+
+        @keyframes moving {
+            from {
+                width: 200px;
+                transform: scale(0.5) rotate(0deg);
+                background: #faef7c;
+            }
+
+            to {
+                width: 400px;
+                transform: scale(1) rotate(360deg);
+                background: #ff9400;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+        <h3>CSS3 Animation</h3>
+    </div>
+</body>
+
+</html>

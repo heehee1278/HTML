@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var str = "Hello Thank you good luck to you";
+        document.write(str.charAt(16), "<br>"); //0부터 스페이스 포함 인덱스 16번째 값
+        //첫번째 you
+        document.write(str.indexOf("you"), "<br>"); //주어진 값과 일치하는 첫 인덱스
+        document.write(str.indexOf("you", 16), "<br>"); //16번째 인덱스에서 발견된 you인덱스
+        document.write(str.lastIndexOf("you"), "<br>"); //뒤에서 부터 첫번째 발견된 you인덱스
+        document.write(str.lastIndexOf("you", 25), "<br>"); //25번째 뒤에서 부터 첫번째 발견된 you인덱스
+        document.write("========================", "<br>");
+        document.write(str.match("luck"), "<br>"); //배열에서 요소를 찾아서 출력
+        document.write(str.match("lack"), "<br>"); //못찾으면 null
+        document.write(str.search("luck"), "<br>"); //요소의 인덱스 = 21
+        document.write(str.search("you"), "<br>"); //요소의 인덱스 = 12
+        document.write(str.substr(21, 4), "<br>"); //배열에서 몇번째 부터 인덱스 개수
+        document.write(str.substring(6, 11), "<br>"); //몇번째 인덱스에서 몇번째 인덱스 앞 까지
+        document.write(str.replace("you", "me"), "<br>"); //첫번째 인덱스를 뒤의 값으로 변경
+        document.write("========================", "<br>");
+        document.write(str.toLowerCase(), "<br>"); //소문자로 변경
+        document.write(str.toUpperCase(), "<br>"); //대문자로 변경
+        document.write(str.length, "<br>"); //배열의 요소 총 갯수
+        document.write("========================", "<br>");
+        var arr = str.split(" "); //요소 기준으로 배열로 저장
+        document.write(arr[0], "<br>"); //배열에서 0번째
+        document.write(arr[4], "<br>"); //배열에서 4번째
+
+        var str2 = "A";
+        var t = str2.charCodeAt(0); //문자를 유니코드로 변환
+        document.write(t, "<br>");
+        document.write(String.fromCharCode(65), "<br>"); //유니코드를 문자로 변환
+        document.write(String.fromCharCode(72), "<br>");
+
+        document.write(str.charCodeAt(0), "<br>"); //str배열에서 첫번째 문자를 유니코드로 변환
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

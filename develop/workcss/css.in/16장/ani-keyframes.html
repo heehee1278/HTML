@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div {
+            width: 100px;
+            height: 100px;
+            background-color: blue;
+            animation-name: change_bg;
+            /* 지속시간 까지 추가해야 작동 */
+            animation-duration: 3s;
+        }
+        /* animation-name, @keyframes 이름 매칭 */
+        @keyframes change_bg {
+            /* ani 시작지점 */
+            from{
+                background-color: blue;
+                border: 1px solid black;
+            }
+            /* ani 끝지점 */
+            to{
+                background-color: #a5d6ff;
+                border: 1px solid blue;
+                border-radius: 50%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div></div>
+</body>
+
+</html>

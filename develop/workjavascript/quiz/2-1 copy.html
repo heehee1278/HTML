@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var p1 = 3000;
+        var p2 = 6000;
+        var p3 = 3000;
+        var cost = prompt("하루 지출비용");
+
+        var msg1 = "원 초과";
+        var msg2 = "돈 관리 잘했어요!";
+
+        var day = p1 + p2 + p3;
+        var result = cost > day && day > cost;
+        result = result ? msg1 : msg2;
+        document.write(result);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+        <h1>상품 판매</h1>
+        <p>
+            <h3>로그인</h3>
+            <label for="id">아이디 <input type="text" id="id" placeholder="아이디를 입력하세요"></label>
+            <label for="password">비밀번호 <input type="password" id="password" placeholder="비밀번호를 입력하세요"></label>
+            <input type="submit" value="로그인">
+        </p>
+        <p>
+            <h3>회원정보</h3>
+            <label for="name">이름 <input type="text" id="name" placeholder="이름을 입력하세요"></label>
+            <label for="email">이메일 <input type="email" id="email" placeholder="이메일을 입력하세요"></label>
+            <label for="tel">전화번호 <input type="tel" id="tel" placeholder="전화번호를 입력하세요"></label>
+            <input type="reset" value="정보 수정">
+        </p>
+        <p>
+            <h3>상품 등록</h3>
+            <label for="product">상품명 <input type="text" id="product" placeholder="상품명을 입력하세요"></label>
+            <label for="price">가격 <input type="text" id="price" placeholder="상품 가격을 입력하세요"></label>
+            <input type="submit" value="상품 등록">
+            <h4>상품 목록</h4>
+            <select name="product" id="list">
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+        </p>
+        <p>
+            <h3>점포 등록</h3>
+            <label for="store">점포명 <input type="text" id="store" placeholder="점포명을 입력하세요"></label>
+            <label for="location">위치 <input type="text" id="location" placeholder="위치를 입력하세요"></label>
+            <input type="submit" value="점포 등록">
+        </p>
+            <figcaption>&copy; 2025 상품 판매</figcaption>
+        </fieldset>
+    </form>
+</body>
+</html>

@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 60px;
+            height: 60px;
+            margin: 60px;
+            /* animation: background 1.5s; */
+            /* animation-name: 대신에 animation으로 통합 */
+            animation: background 1.5s infinite alternate, rotate 1.5s infinite ;
+        }
+
+        @keyframes background {
+            from {
+                background: red
+            }
+
+            50% {
+                background: green;
+            }
+
+            to {
+                background: blue;
+            }
+        }
+        @keyframes rotate {
+            from {
+                transform :rotatex(0deg) rotateY(0deg) perspective(120px);
+                
+            }
+
+            50% {
+                transform :rotatex(-180deg) rotateY(0deg) perspective(120px);
+            }
+
+            to {
+                transform :rotatex(-180deg) rotateY(-180deg) perspective(120px);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box">
+    </div>
+</body>
+
+</html>

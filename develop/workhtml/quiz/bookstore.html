@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            background-color: white;
+        }
+
+        header {
+            color: white;
+            background-color: #3B5998;
+            text-align: center;
+            padding: 20px;
+            font-size: 24px;
+        }
+
+        section {
+            max-width: 800px;
+            margin: 20px auto;
+            background: white;
+            padding: 20px;
+            border-radius: 5px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1)
+        }
+        footer{
+            background-color: #3B5998;
+            text-align: center;
+            color: white;
+            width: 100%;
+            bottom: 0;
+            padding: 15px;
+        }
+        form label{
+            display: block;
+            margin-bottom: 8px;
+            font-weight: bold;
+            color: #333;
+        }
+        form input, form button{
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+        form button{
+            cursor: pointer;
+            color: white;
+            background-color: #3B5998;
+        }
+        form button:hover {
+            background-color:#4c70ba ;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>온라인 서점</h1>
+    </header>
+    <section id="login" class="active">
+        <form id="loginForm">
+            <h2>로그인</h2>
+            <label id="id">아이디
+                <p>
+                    <input type="text" id="id" required placeholder="아이디를 입력하세요">
+                </p>
+            </label>
+            <label id="pw">비밀번호
+                <p>
+                    <input type="password" id="pw" required placeholder="비밀번호를 입력하세요">
+                </p>
+            </label>
+            <button type="submit">로그인</button>
+        </form>
+    </section>
+    <section id="member">
+        <form id="memberForm">
+            <h2>회원정보</h2>
+            <label id="name">이름
+                <input type="text" id="name" required placeholder="이름을 입력하세요">
+            </label>
+            <label id="email">이메일
+                <input type="email" id="email" required placeholder="이메일을 입력하세요">
+            </label>
+            <label id="tel">전화번호
+                <input type="tel" id="tel" required placeholder="전화번호를 입력하세요">
+            </label>
+            <button type="reset">정보 수정</button>
+        </form>
+    </section>
+    <section id="book">
+        <form id="bookForm">
+            <h2>도서 등록</h2>
+            <label id="title">도서 제목
+                <input type="text" id="title" required placeholder="도서 제목을 입력하세요">
+            </label>
+            <label id="author">저자
+                <input type="text" id="wirter" required placeholder="저자를 입력하세요">
+                <label id="isbn">ISBN
+                    <input type="text" id="isbn" required placeholder="ISBN을 입력하세요">
+                </label>
+                <button type="submit">도서 등록</button>
+        </form>
+    </section>
+    <section id="search">
+        <form id="searchForm">
+            <h2>도서 검색</h2>
+            <label id="search">검색어
+                <input type="text" id="search" required placeholder="도서 제목 도는 저자를 입력하세요">
+            </label>
+            <button type="submit">검색</button>
+        </form>
+    </section>
+    <footer>
+        <p>&copy; 2025 온라인 서점</p>
+    </footer>
+</body>
+
+</html>

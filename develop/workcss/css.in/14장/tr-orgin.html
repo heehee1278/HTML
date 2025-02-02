@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .orgin {
+            border: 1px solid black;
+            margin: 40px;
+        }
+
+        .rose:hover {
+            /* transform: rotateZ(10deg); z축 회전 */
+            transform: rotateZ(10deg);
+        }
+
+        .ltop .rose:hover {
+            /* transform-origin: left top; 왼쪽 아래 기준 */
+            transform-origin: left top;
+        }
+        .rtop .rose:hover {
+            /* transform-origin: left top; 오른쪽 위 기준 */
+            transform-origin: right top;
+        }
+        .lbottom .rose:hover {
+            /* transform-origin: left top; 왼쪽 아래 기준 */
+            transform-origin: left bottom;
+        }
+        .rbottom .rose:hover {
+            /* transform-origin: left top; 오른쪽 아래래 기준 */
+            transform-origin: right bottom;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="orgin">
+        <div class="ltop">
+            <img src="/workcss/img/rose.jpg" alt="" class="rose">
+        </div>
+    </div>
+    <div class="orgin">
+        <div class="rtop">
+            <img src="/workcss/img/rose.jpg" alt="" class="rose">
+        </div>
+    </div>
+    <div class="orgin">
+        <div class="lbottom">
+            <img src="/workcss/img/rose.jpg" alt="" class="rose">
+        </div>
+    </div>
+    <div class="orgin">
+        <div class="rbottom">
+            <img src="/workcss/img/rose.jpg" alt="" class="rose">
+        </div>
+    </div>
+</body>
+
+</html>

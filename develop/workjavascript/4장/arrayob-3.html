@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var greenArr=["교대","방배","강남"]
+        var yellowArr=["미금","오리","죽전"]
+        //배열에 요소 추가, 삭제 splice(index,삭제요소 개수,요소(추가))
+        greenArr.splice(2,1,"서초","역삼"); 
+        // console.log(greenArr);
+
+        //마지막 값 잘라내기해서 data1에 저장
+        var data1 = yellowArr.pop(); // pop 배열에서 뒤에 있는 요소 꺼냄(삭제)
+        
+        //첫번째 값 잘라내기해서 data2에 저장
+        var data2 = yellowArr.shift(); // shift 배열에서 앞에 있는 요소 꺼냄(삭제)
+
+        yellowArr.push(data2); //배열 끝에 요소 추가
+        yellowArr.unshift(data1); //배열 앞에 요소 추가
+
+
+        // console.log(yellowArr);
+        // console.log(data1);
+        console.log(yellowArr);
+        // console.log(data2);
+
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
