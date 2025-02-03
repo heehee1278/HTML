@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script>
+        $(function () {
+            // index 는 0부터 시작
+            $("#menu li").eq(2).css({ "background-color": "#ff0" })
+            // 요소 중 인덱스 n 보다 작은 요소
+            $("#menu li:lt(2)").css({ "background-color": "#0ff" })
+            // 요소 중 인덱스 n 보다 큰 요소
+            $("#menu li:gt(2)").css({ "background-color": "#f0f" })
+        });
+    </script>
+</head>
+
+<body>
+    <h1>탐색 선택자</h1>
+    <ul id="menu">
+        <li>내용1</li>
+        <li>내용2</li>
+        <li>내용3</li>
+        <li>내용4</li>
+    </ul>
+</body>
+
+</html>

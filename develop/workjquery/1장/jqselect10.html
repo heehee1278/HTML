@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+    <script>
+        $(function () {
+            // 제이쿼리 스타일 변수로 처리
+            var style_1 = {
+                "background-color": "#0ff", "border": "2px solid #f00"
+            }
+            var style_2 = {
+                "background-color": "#ff0", "border": "2px dashed #f00"
+            }
+            // $(."txt").css(style_1);
+            // prev 선택요소의 바로 이전 요소
+            // $(."txt").prev().css(style_1);
+            // $(".txt").css(style_2);
+            // + 다음요소
+            // $(".txt + h3").css(style_2);
+            // $(".txt").css(style_2);
+            // 선택요소의 다음 요소
+            // $(".txt").next().css(style_2);
+            // 선택요소의 next 수만큼의 다음요소
+            $(".txt").next().next().css(style_2);
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <h1>인접 관계 선택자</h1>
+        <p>내용1</p>
+        <p class="txt">내용2</p>
+        <!-- <p>내용3<p> -->
+        <h3>내용3</h3>
+        <p>내용4</p>
+    </div>
+</body>
+
+</html>
