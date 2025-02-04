@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #wrap {
+            height: 5000px;
+            padding-top: 2000px;
+        }
+    </style>
+    <script>
+        $(function () {
+            // 선택한 요소가 문서에서 수평/수직으로 얼마나 떨어져 있는지 값 반환
+            var topNum = $("h1").offset().top;
+            console.log(topNum);
+        });
+    </script>
+</head>
+
+<body>
+    <div id="wrap">
+        <h1>위치 메소드</h1>
+    </div>
+</body>
+
+</html>

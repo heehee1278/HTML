@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="jquery.js"></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #box_wrap {
+            width: 300px;
+            height: 200px;
+            margin: 50px auto;
+            background-color: #ccc;
+            position: relative;
+        }
+
+        .box {
+            width: 50px;
+            height: 50px;
+            left: 100px;
+            top: 50px;
+            background-color: #f00;
+            position: absolute;
+        }
+    </style>
+    <script>
+        $(function () {
+            var $txt1 = $(".txt_1 span");
+            var $txt2 = $(".txt_2 span");
+            var $box = $(".box");
+
+            // 선택한 요소의 포지션 위칫값을 반환
+            var pos_t = $box.position().top;
+            // 선택한 요소가 문서에서 수평/수직으로 얼마나 떨어져 있는지 값 반환
+            var off_t = $box.offset().top;
+
+            // $txt1.text("777");
+            // box 클래스의 top: 50px
+            $txt1.text(pos_t);
+            // #box_wrap의 margin: 50px + box 클래스의 top: 50px
+            $txt2.text(off_t);
+        });
+    </script>
+</head>
+
+<body>
+    <div id="box_wrap">
+        <p class="box">박스</p>
+    </div>
+    <p class="txt_1">상대 top위치값 :<span></span></p>
+    <p class="txt_2">절대 top위치값 :<span></span></p>
+</body>
+
+</html>
