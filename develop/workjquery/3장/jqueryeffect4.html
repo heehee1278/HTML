@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/develop/workjquery/jquery.js"></script>
+    <style>
+        * {
+            margin: 0;
+        }
+
+        .txt1 {
+            width: 50px;
+            text-align: center;
+            background-color: aqua;
+        }
+    </style>
+    <script>
+        $(function () {
+            // 큐 순서대로 애니메이션 실행
+            $(".txt1").animate({ marginLeft: "200px" }, 1000)
+                .animate({ marginTop: "200px" }, 1000)
+                // queue : 실행 이후 모든 애니매이션 취소
+                .queue(function () {
+                    // alert("queue run");
+                    $(this).css({ "background": "red" });
+                    // dequeue : queue 실행 이후에 적용된 애니매이션 메소드가 취소되지 않게 연결
+                    $(this).dequeue();
+                })
+                .animate({ marginLeft: "0px" }, 1000)
+                .animate({ marginTop: "0px" }, 1000);
+
+        });
+    </script>
+</head>
+
+<body>
+    <p class="txt1">내용1</p>
+
+</body>
+
+</html>

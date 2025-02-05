@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta "viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/develop/workjquery/jquery.js"></script>
+    <script>
+        $(function () {
+            $(".menuWrap_1 a").on("click", function () {
+                // $(".menuWrap_1 a").css({ "background-color": "#f0f" }); => a요소 전체 이벤트
+                $(this).css({ "background-color": "#ff0" }); // => 각 이벤트 적용
+            });
+            $(".menuWrap_2 a").on("click", function () {
+                var idx = $(".menuWrap_2 a").index(this); // 이벤트 발생한 요소의 인덱스 값 반환
+                $(".idxNum").text(idx);
+                $(".menuWrap_2 a").eq(idx).css({ "background-color": "#ff0" });
+            });
+        });
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+    <h2>$(this)</h2>
+    <ul class="menuWrap_1">
+        <li><a href="#">메뉴1</a></li>
+        <li><a href="#">메뉴2</a></li>
+        <li><a href="#">메뉴3</a></li>
+    </ul>
+    <h2>index()</h2>
+    <ul class="menuWrap_2">
+        <li><a href="#">메뉴4</a></li>
+        <li><a href="#">메뉴5</a></li>
+        <li><a href="#">메뉴6</a></li>
+    </ul>
+    <p class="idxNum"></p>
+</body>
+
+</html>

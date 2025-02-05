@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta "viewport" content="width=device-width, initial-scale=1.0">
+    <script src="/develop/workjquery/jquery.js"></script>
+    <script>
+        $(function () {
+            // change() : 선택한 폼 요소의 값(value)을 새값으로 바꿈
+            // 포커스 다른 요소로 이동 시 이벤트 발생
+            // #rel_site = 이벤트 대상
+            $("#rel_site").on("change", function () {
+                $(".txt").text($(this).val());
+            });
+        });
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+    <select name="" id="rel_site">
+        <option value=""></option>
+        <option value="www.google.com">구글</option>
+        <option value="www.naver.com">네이버</option>
+        <option value="www.daum.net">다음</option>
+    </select>
+    <p class="txt"></p>
+</body>
+
+</html>
